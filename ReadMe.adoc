@@ -17,7 +17,7 @@ Further details will be provided in next section.
 ### OpenSource based.
 It uses open source embeddings model https://huggingface.co/sentence-transformers/all-mpnet-base-v2[all-mpnet-base-v2] and
 llm model https://huggingface.co/microsoft/Phi-3-mini-4k-instruct[microsoft/Phi-3-mini-4k-instruct]
-This component does not require any API key. I have tried to use a smaller model as my current machine does not have
+This component does not require any API key. I have tried to use a smaller model as my current machine does not
 support GPU. Hence, inference may take some time.
 
 ## Architecture
