@@ -115,8 +115,11 @@ Technician: Book an appointment on date 12th July, time 12:00 and reason fixing 
 
 Please note that it is a dummy assistant and does not actually book the appointment. In real use case we can integrate with google calendar api for example.
 
-## Additional Details
+## Next Step
 
-- Added required logging for debugging.
-- As a next step, we can create a docker image and can deploy on Kubernetes cluster on GCP, AWS or Azure.
+- Add further logging and monitoring with tools like LangSmith and LangWatch.
+- Create endpoints with FastAPI or Flask.
+- Develop frontend with React or Streamlit.
+- Create docker image and deploy on Kubernetes cluster on GCP, AWS or Azure.
 - Configure Kubernetes cluster with autoscaling to add/remove nodes based on the traffic .
+
