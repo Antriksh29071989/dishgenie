@@ -86,7 +86,7 @@ Technician:It works!
 
 
 ### OpenSource based
-[Step 1 and 2 are neeeded if not completed in API based step]
+##### Steps 1 and 2 are required if they have not already been completed in the API-based setup step.
 1. Create a new python virtual environment and install requirements.txt file places under `src/container/requirements.txt` with command `pip install -r requirements.txt`
 2. It will download all the required libraries.
 3. Run file `src/container/opensource/dishgenie_openllm.py`
@@ -96,7 +96,7 @@ loaded on to GPU and inference speed will be much faster.
 
 
 ### Scheduler
-[Step 1, 2 and 3 are neeeded if not completed in API based step]
+##### Steps 1,2 and 3 are required if they have not already been completed in the API-based setup step.
 1. Create a new python virtual environment and install requirements.txt file places under `src/container/requirements.txt` with command `pip install -r requirements.txt`
 2. It will download all the required libraries.
 3. Setup GPT key in environment variable `OPENAI_API_KEY`. For simplicity, I have added in python code but in production it should be set as a environment variable.
