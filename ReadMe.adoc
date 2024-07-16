@@ -38,15 +38,15 @@ image::resources/architecture_diagram.png[]
 In designing of the project structure, I have followed the container approach, so It can get extended to production
 as a docker image and can be used by machine learning orchestration tools like kubeflow.
 
-1. resources : contains various resources like architectural diagram.
-2. source : pdf files that has been shared in the assignments.
-3. src : contains the source code of the application and can further be divided:
-    a. api_based : contains application logic with gpt approach.
-    b. opensource: contains application logic with opensource approach.
-    c. scheduler : contains application logic for booking appointments. Please note that
+1. *resources* : contains various resources like architectural diagram.
+2. *source* : pdf files that has been shared in the assignments.
+3. *src* : contains the source code of the application and can further be divided:
+    a. *api_based* : contains application logic with gpt approach.
+    b. *opensource*: contains application logic with opensource approach.
+    c. *scheduler* : contains application logic for booking appointments. Please note that
     I have create a dummy appointment scheduler for the task with limited functionalities.
-    d. shared: Shared code like GPT key that is used by other components.
-    e. requirements.txt : contains all the required libraries that is needed to run the application.
+    d. *shared*: Shared code like GPT key that is used by other components.
+    e. *requirements.txt* : contains all the required libraries that is needed to run the application.
 
 ### How to Run
 
