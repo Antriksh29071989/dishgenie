@@ -6,16 +6,17 @@ It can also assist you to ask general question like "how to clean dishwasher ?"
 It can also assist you in terms of booking the appointment.
 
 ## Prerequisite:
-I have implemented the task in two approaches :
+I have implemented the task in two approaches using RAG:
 
 ### API Based:
 It uses gpt for creating embedding OpenAIEmbeddings and model gpt-3.5-turbo. In order to run the solution, we need to
-provide GPT API key. It can be generated here https://platform.openai.com/api-keys.
+provide GPT API key. It can be generated https://platform.openai.com/api-keys[here] .
 Further details will be provided in next section
 
 ### OpenSource based.
-It uses open source embeddings model all-mpnet-base-v2 https://huggingface.co/sentence-transformers/all-mpnet-base-v2 and microsoft/Phi-3-mini-4k-instruct https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
-It does not need any key. I have try to use a smaller model as my current machine does not have the CPU and inference may take some time.
+It uses open source embeddings model https://huggingface.co/sentence-transformers/all-mpnet-base-v2[all-mpnet-base-v2] and
+https://huggingface.co/microsoft/Phi-3-mini-4k-instruct[microsoft/Phi-3-mini-4k-instruct]
+This component does not need any key. I have try to use a smaller model as my current machine does not have the CPU and inference may take some time.
 
 ## Architecture
 
@@ -104,7 +105,7 @@ Technician: Book an appointment on date 12th July, time 12:00 and reason fixing 
 
 ##### DishGenie: Appointment confirmed! 📅 Date: 12th July Time: 12:00 Reason: Fixing dishwasher If you need any changes or have any other requests, feel free to let me know!
 
-Please note that it is a dummy assistant and does not actually book the appointment. In read use case we can integrate with api like google calender.
+Please note that it is a dummy assistant and does not actually book the appointment. In readl use case we can integrate with google calendar api for example.
 
 ## Additional Details
 
