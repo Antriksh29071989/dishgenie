@@ -4,7 +4,8 @@ from pathlib import Path
 from src.container.opensource.embeddings import data_embedder, embedding_pipeline
 from src.container.opensource.models import open_llm
 from src.container.opensource.prompts import prompt_loader
-from src.container.opensource.utils import df_utils, constants
+from src.container.opensource.utils import df_utils
+from src.container.shared import constants
 
 
 logging.config.fileConfig(constants.LOG_CONF, disable_existing_loggers=False)
@@ -14,7 +15,7 @@ if Path(embedding_path).exists():
     logging.info(f"loading embedded file fro path {embedding_path}.")
     text_with_chunk_df = df_utils.load_csv(embedding_path)
 else:
-    directory_path = "../../../source"
+    directory_path = constants.SOURCE_PATH
     logging.info(f"loading pdf files from {directory_path} and saving embedding file at {embedding_path}.")
     embedding_pipeline.create_embedding_from_pdf(directory_path=directory_path, persisted_path=embedding_path)
     text_with_chunk_df = df_utils.load_csv(embedding_path)

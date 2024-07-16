@@ -6,9 +6,10 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables.history import RunnableWithMessageHistory
 
 from src.container.api_based.embeddings import vector_embedder
-from src.container.api_based.models import gpt
+from src.container.api_based.models import model_loader
 from src.container.api_based.prompts import prompt_loader
-from src.container.api_based.utils import app_utils, constants
+from src.container.api_based.utils import app_utils
+from src.container.shared import constants
 import logging.config
 from langchain_chroma import Chroma
 
@@ -36,7 +37,7 @@ context_system_prompt = prompt_loader.contextualize_system_prompt
 model_name = "gpt-3.5-turbo"
 temperature = 0
 logging.info(f"loading GPT model...{model_name} and {temperature}")
-llm = gpt.load_model(model_name=model_name, temperature=temperature)
+llm = model_loader.load_model(model_name=model_name, temperature=temperature)
 
 contextualize_q_prompt = ChatPromptTemplate.from_messages(
     [

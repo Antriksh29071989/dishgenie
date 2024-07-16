@@ -43,6 +43,7 @@ humanfriendly==10.0
 idna==3.7
 importlib_metadata==7.1.0
 importlib_resources==6.4.0
+iniconfig==2.0.0
 Jinja2==3.1.4
 joblib==1.4.2
 jsonpatch==1.33
@@ -88,6 +89,7 @@ overrides==7.7.0
 packaging==24.1
 pandas==2.2.2
 pillow==10.4.0
+pluggy==1.5.0
 posthog==3.5.0
 preshed==3.0.9
 protobuf==4.25.3
@@ -101,6 +103,8 @@ PyMuPDF==1.24.7
 PyMuPDFb==1.24.6
 PyPika==0.48.9
 pyproject_hooks==1.1.0
+pytest==8.2.2
+pytest-mock==3.14.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
 python-multipart==0.0.9
