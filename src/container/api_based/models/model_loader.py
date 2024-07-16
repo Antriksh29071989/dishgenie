@@ -6,7 +6,6 @@ logger = logging.getLogger(__name__)
 
 
 def load_model(model_name: str, temperature: int):
-    logger.info("load model...")
     """
     :return: GPt model
     """
