@@ -94,6 +94,8 @@ loaded on to GPU and inference speed will be much faster.
     Replace GPT_KEY with the correct key.
 4. Run file `src/container/scheduler/scheduler.py`
 
+#### Possible conversation :
+
 Technician:Can you help me in booking an appointment?
 
 ##### DishGenie:Of course! I can help you with that. Please provide me with the details of the appointment you would like to book.
@@ -107,5 +109,5 @@ Please note that it is a dummy assistant and does not actually book the appointm
 ## Additional Details
 
 - Added required logging for debugging.
-- As a next step, we can create a docker image and can deploy on Kubernetes cluster.
+- As a next step, we can create a docker image and can deploy on Kubernetes cluster on GCP, AWS or Azure.
 - Configure Kubernetes cluster with autoscaling to add/remove nodes based on the traffic .
