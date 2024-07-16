@@ -23,8 +23,15 @@ This component does not need any key. I have try to use a smaller model as my cu
 
 image::resources/architecture_diagram.png[]
 
-In the workflow, PDF files are getting loaded and preprocessing has been performed on the text.
-Further, the text is then divided into smaller chunks and embeddings are getting created and store in vector database.
+
+1. Multiple PDF files are loaded using a library like PyPDFLoader.
+2. The data is then preprocessed and split into smaller chunks.
+3. Embeddings are created for these smaller chunks.
+4. The embeddings are stored in a vector database; for example, I used ChromaDB in an API-based approach.
+5. The user submits a query like "What is the error code E4 in a Whirlpool dishwasher?"
+6. Embeddings created for the query, and relevant passages retrieved.
+7. The retrieved context passed to the LLM for augmentation.
+8. The user receives the response.
 
 
 ## Project structure
