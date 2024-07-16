@@ -9,15 +9,16 @@ Additionally, DishGenie can assist with scheduling appointments.
 I have implemented the task in two approaches using RAG:
 
 ### API Based:
-It uses gpt for creating embedding https://platform.openai.com/docs/guides/embeddings[OpenAIEmbeddings] and
+It uses gpt for creating embedding https://platform.openai.com/docs/guides/embeddings[OpenAIEmbeddings] and the
 model https://platform.openai.com/docs/models/gpt-3-5-turbo[gpt-3.5-turbo]. In order to run the solution, we need to
-provide GPT API key. It can be generated https://platform.openai.com/api-keys[here] .
-Further details will be provided in next section
+provide GPT API key which can be generated https://platform.openai.com/api-keys[here].
+Further details will be provided in next section.
 
 ### OpenSource based.
 It uses open source embeddings model https://huggingface.co/sentence-transformers/all-mpnet-base-v2[all-mpnet-base-v2] and
-https://huggingface.co/microsoft/Phi-3-mini-4k-instruct[microsoft/Phi-3-mini-4k-instruct]
-This component does not need any key. I have try to use a smaller model as my current machine does not have the CPU and inference may take some time.
+llm model https://huggingface.co/microsoft/Phi-3-mini-4k-instruct[microsoft/Phi-3-mini-4k-instruct]
+This component does not require any API key. I have tried to use a smaller model as my current machine does not have
+support GPU. Hence, inference may take some time.
 
 ## Architecture
 
