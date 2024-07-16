@@ -1,15 +1,16 @@
 # DishGenie
 
-DishGenie assist you in finding issues related to your dishwasher and quickly fix them. You can ask questions like
-"I am having trouble with a Model 18 ADA dishwasher. It’s showing an error code E4 and the customer is complaining is it not draining."
-It can also assist you to ask general question like "how to clean dishwasher ?"
-It can also assist you in terms of booking the appointment.
+DishGenie helps you identify and resolve problems with your dishwasher quickly.
+You can inquire about specific issues, such as "My Model 18 ADA dishwasher is showing an E4 error code and isn’t draining; how can I fix it?"
+It can also provide general advice, like "How do I clean my dishwasher?"
+Additionally, DishGenie can assist with scheduling appointments.
 
 ## Prerequisite:
 I have implemented the task in two approaches using RAG:
 
 ### API Based:
-It uses gpt for creating embedding OpenAIEmbeddings and model gpt-3.5-turbo. In order to run the solution, we need to
+It uses gpt for creating embedding https://platform.openai.com/docs/guides/embeddings[OpenAIEmbeddings] and
+model https://platform.openai.com/docs/models/gpt-3-5-turbo[gpt-3.5-turbo]. In order to run the solution, we need to
 provide GPT API key. It can be generated https://platform.openai.com/api-keys[here] .
 Further details will be provided in next section
 
