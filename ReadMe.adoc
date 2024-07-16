@@ -5,7 +5,7 @@ You can inquire about specific issues, such as "My Model 18 ADA dishwasher is sh
 It can also provide general advice, like "How do I clean my dishwasher?"
 Additionally, DishGenie can assist with scheduling appointments.
 
-## Prerequisite:
+## Approaches:
 I have implemented the task in two approaches using RAG:
 
 ### API Based:
