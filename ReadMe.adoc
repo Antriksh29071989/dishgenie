@@ -113,7 +113,7 @@ Technician: Book an appointment on date 12th July, time 12:00 and reason fixing 
 
 ##### DishGenie: Appointment confirmed! 📅 Date: 12th July Time: 12:00 Reason: Fixing dishwasher If you need any changes or have any other requests, feel free to let me know!
 
-Please note that it is a dummy assistant and does not actually book the appointment. In readl use case we can integrate with google calendar api for example.
+Please note that it is a dummy assistant and does not actually book the appointment. In real use case we can integrate with google calendar api for example.
 
 ## Additional Details
 
