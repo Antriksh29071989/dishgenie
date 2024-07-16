@@ -5,16 +5,16 @@ You can inquire about specific issues, such as "My Model 18 ADA dishwasher is sh
 It can also provide general advice, like "How do I clean my dishwasher?"
 Additionally, DishGenie can assist with scheduling appointments.
 
-## Approaches:
+## Approaches
 I have implemented the task in two approaches using RAG:
 
-### API Based:
+### API Based
 It uses gpt for creating embedding https://platform.openai.com/docs/guides/embeddings[OpenAIEmbeddings] and the
 model https://platform.openai.com/docs/models/gpt-3-5-turbo[gpt-3.5-turbo]. In order to run the solution, we need to
 provide GPT API key which can be generated https://platform.openai.com/api-keys[here].
 Further details will be provided in next section.
 
-### OpenSource based.
+### OpenSource based
 It uses open source embeddings model https://huggingface.co/sentence-transformers/all-mpnet-base-v2[all-mpnet-base-v2] and
 llm model https://huggingface.co/microsoft/Phi-3-mini-4k-instruct[microsoft/Phi-3-mini-4k-instruct]
 This component does not require any API key. I have tried to use a smaller model as my current machine does not
@@ -69,7 +69,7 @@ I have added questions given in the assignment in list. Feel free to change it t
     "It works!"
 ]`
 
-#### Possible conversation :
+#### Possible conversation
 DishGenie is ready to provide answers, Please ask ...
 
 Technician I ’m having trouble with a Model 18 ADA dishwasher. It’s showing an error code E4 and the customer is complaining is it not draining.
@@ -104,7 +104,7 @@ loaded on to GPU and inference speed will be much faster.
     Replace GPT_KEY with the correct key.
 4. Run file `src/container/scheduler/scheduler.py`
 
-#### Possible conversation :
+#### Possible conversation
 
 Technician:Can you help me in booking an appointment?
 
@@ -116,7 +116,7 @@ Technician: Book an appointment on date 12th July, time 12:00 and reason fixing 
 
 Please note that it is a dummy assistant and does not actually book the appointment. In real use case we can integrate with google calendar api for example.
 
-## Next Step
+## Next Steps
 
 - Add further logging and monitoring with tools like LangSmith and LangWatch.
 - Create endpoints with FastAPI or Flask.
